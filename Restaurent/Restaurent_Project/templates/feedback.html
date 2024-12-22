@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block feedback_status %}active{% endblock feedback_status%}
+{% block class %}class="sub_page"{% endblock class%}
+{% block main %}
+  
+  <!-- feedback section -->
+
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="heading_container">
+        <h2>
+          Book A Table
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-md-10">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" class="form-control" name="user_name" required placeholder="Your Name" />
+              </div>
+              <div>
+                <textarea name="description" class="form-control" required placeholder="Describe your experience here!"></textarea>
+              </div>
+              <div>
+                <input class="form-control" type="file" id="formFile">
+              </div>
+              <div>
+                <select class="form-control nice-select wide">
+                  <option value="" disabled selected>
+                    Please Give Your Rating!
+                  </option>
+                  <option value="1">
+                    1
+                  </option>
+                  <option value="2">
+                    2
+                  </option>
+                  <option value="3">
+                    3
+                  </option>
+                  <option value="4">
+                    4
+                  </option>
+                  <option value="5">
+                    5
+                  </option>
+                </select>
+              </div>
+              
+              <div class="btn_box">
+                <button>
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- end feedback section -->
+{% endblock main%}
